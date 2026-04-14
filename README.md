@@ -26,42 +26,42 @@ I design and build backend-heavy AI systems focused on:
 ### 1. AI Credit Rating, Surveillance & Decision Feedback Copilot
 Production-style credit intelligence platform for ratings support, surveillance monitoring, performance metrics, analyst feedback loops, fraud-aware decision support, and grounded document Q&A.  
 **Stack:** FastAPI, REST APIs, RAG, LangChain, Claude, TensorFlow/Keras, PyTorch  
-**Repo:** [View Project](https://github.com/YOUR_USERNAME/ai-credit-rating-surveillance-feedback-copilot)
+**Repo:** [View Project](https://github.com/Josh1820/ai-credit-rating-surveillance-feedback-copilot/tree/main)
 
 ### 2. AI Pricing Intelligence, Valuation & Market Research Copilot
 Finance and pricing intelligence platform for pricing analytics, valuation support, market research, grounded Q&A, anomaly detection, and explainable pricing recommendations.  
 **Stack:** FastAPI, RAG, LangChain, Claude, TensorFlow/Keras, PyTorch  
-**Repo:** [View Project](https://github.com/YOUR_USERNAME/ai-pricing-intelligence-valuation-market-research-copilot)
+**Repo:** [View Project](https://github.com/Josh1820/ai-pricing-intelligence-valuation-market-research-copilot)
 
 ### 3. AI Financial Research, Risk & Compliance Copilot
 Finance intelligence platform for research workflows, compliance-aware summaries, forecasting, and NLP-based document analysis.  
 **Stack:** FastAPI, RAG, LangChain, Claude, TensorFlow/Keras, PyTorch  
-**Repo:** [View Project](https://github.com/YOUR_USERNAME/ai-financial-research-risk-compliance-copilot)
+**Repo:** [View Project](https://github.com/Josh1820/AI-Financial-Research-Risk-Compliance-Copilot)
 
 ### 4. Enterprise KnowledgeOps & Compliance RAG Platform
 Multi-tenant RAG platform for enterprise document ingestion, semantic and hybrid search, grounded chat with citations, evaluations, analytics, and audit-style workflows.  
 **Stack:** FastAPI, RAG, LangChain, Claude  
-**Repo:** [View Project](https://github.com/YOUR_USERNAME/enterprise-knowledgeops-rag-platform)
+**Repo:** [View Project](https://github.com/Josh1820/Enterprise-KnowledgeOPS-RAG-Platform)
 
 ### 5. Secure Backend Boilerplate with Claude Guardrails
 Security-first FastAPI boilerplate with authentication scaffolds, RBAC, validation, structured errors, rate limiting, Docker, and Claude Code workflow organization.  
 **Stack:** FastAPI, Python, security middleware, pytest, Docker  
-**Repo:** [View Project](https://github.com/YOUR_USERNAME/secure-backend-claude-guardrails)
+**Repo:** [View Project](https://github.com/Josh1820/Secure-Backend-Claude-Guardrails)
 
 ### 6. RAG Knowledge Assistant for Company Documents
 FastAPI-based RAG system for uploading company documents, indexing them, retrieving relevant content, and generating grounded answers with citations.  
 **Stack:** Python, FastAPI, RAG, vector search, Docker  
-**Repo:** [View Project](https://github.com/YOUR_USERNAME/rag-company-docs-assistant)
+**Repo:** [View Project](https://github.com/Josh1820/RAG-Company-Docs-Assistant)
 
 ### 7. AI Testing and QA Copilot
 Developer-focused QA platform for code analysis, test suggestion, pytest scaffold generation, and QA report creation.  
 **Stack:** FastAPI, Python, pytest, HTML/CSS/JS  
-**Repo:** [View Project](https://github.com/YOUR_USERNAME/ai-testing-qa-copilot)
+**Repo:** [View Project](https://github.com/Josh1820/AI-Testing-QA-Copilot)
 
 ### 8. AI DevOps Release Assistant
 Python-based release engineering assistant for changelog generation, release summaries, rollback notes, and deployment checklists.  
 **Stack:** Python, Typer, FastAPI, Git-based workflows  
-**Repo:** [View Project](https://github.com/YOUR_USERNAME/ai-devops-release-assistant)
+**Repo:** [View Project](https://github.com/Josh1820/AI-DevOps-Release-Assistant)
 
 ## Portfolio Website
 [Portfolio Website](https://Josh1820.github.io)
