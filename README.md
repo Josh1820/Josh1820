@@ -1,71 +1,43 @@
-# Hi, I'm Joshua
+# Joshua Jacob
 
-## AI Engineer
-AI / Backend / FastAPI Engineer building production-style platforms with RAG, LangChain, Claude, TensorFlow, Keras, and PyTorch.
+### AI Engineer · Generative AI · Machine Learning
 
-## About Me
-I design and build backend-heavy AI systems focused on:
-- FastAPI and REST API design
-- Retrieval-Augmented Generation (RAG)
-- LangChain workflows
-- LLM-powered reasoning with Claude
-- TensorFlow / Keras forecasting
-- PyTorch NLP and anomaly detection
-- secure, modular, GitHub-ready engineering
+I build practical AI applications and the software around them, combining Python, language models, NLP and full-stack development. My work includes career guidance tools, digital safety learning experiences and platforms with role-based workflows.
 
-## Core Skills
-**Backend:** Python, FastAPI, REST APIs, Pydantic  
-**AI/LLM:** RAG, LangChain, Claude, prompt engineering  
-**ML/DL:** TensorFlow, Keras, PyTorch  
-**Data:** PostgreSQL, SQLite, Chroma, pgvector  
-**DevOps:** Docker, GitHub, pytest, Ruff, Codespaces  
-**Security:** JWT, RBAC, validation, audit logging, secure headers
+Currently **AI-SME at Digital Safety CIC** (April 2026–present). Previously **Senior AI Engineer at TID Global** (September 2025–March 2026). MSc Artificial Intelligence, Cardiff University.
 
-## Featured Projects
+[LinkedIn](https://www.linkedin.com/in/joshua-jacob-72678b191/) · [GitHub](https://github.com/Josh1820)
 
-### 1. AI Credit Rating, Surveillance & Decision Feedback Copilot
-Production-style credit intelligence platform for ratings support, surveillance monitoring, performance metrics, analyst feedback loops, fraud-aware decision support, and grounded document Q&A.  
-**Stack:** FastAPI, REST APIs, RAG, LangChain, Claude, TensorFlow/Keras, PyTorch  
-**Repo:** [View Project](https://github.com/Josh1820/ai-credit-rating-surveillance-feedback-copilot/tree/main)
+## Selected work
 
-### 2. AI Pricing Intelligence, Valuation & Market Research Copilot
-Finance and pricing intelligence platform for pricing analytics, valuation support, market research, grounded Q&A, anomaly detection, and explainable pricing recommendations.  
-**Stack:** FastAPI, RAG, LangChain, Claude, TensorFlow/Keras, PyTorch  
-**Repo:** [View Project](https://github.com/Josh1820/ai-pricing-intelligence-valuation-market-research-copilot)
+| Project | Focus and contribution | Technologies |
+| --- | --- | --- |
+| **World Police Summit Advisory Platform** | Implemented administrator review of expert service requests, public feedback and interest registration. Local implementation. | React, TypeScript, Django REST Framework, PostgreSQL |
+| **Gendered Language Detection and Correction** | MSc thesis: an NLP application that identifies gendered terms and suggests neutral alternatives using linguistic reference mapping. | Python, Flask, CSV |
+| **CareerCTRL** | Contributor to a career guidance AI application. The project combines a Python API with a React interface. | FastAPI, React, LLM integration |
+| **Digital Safety Escape Experience** | Developed and refined puzzle journeys, replay variants and learning-level selection for children and beginner learners. | React, JavaScript |
 
-### 3. AI Financial Research, Risk & Compliance Copilot
-Finance intelligence platform for research workflows, compliance-aware summaries, forecasting, and NLP-based document analysis.  
-**Stack:** FastAPI, RAG, LangChain, Claude, TensorFlow/Keras, PyTorch  
-**Repo:** [View Project](https://github.com/Josh1820/AI-Financial-Research-Risk-Compliance-Copilot)
+These are summaries of professional and academic work. Source availability varies; no private project code is included here. [Read the project summaries](docs/projects/README.md).
 
-### 4. Enterprise KnowledgeOps & Compliance RAG Platform
-Multi-tenant RAG platform for enterprise document ingestion, semantic and hybrid search, grounded chat with citations, evaluations, analytics, and audit-style workflows.  
-**Stack:** FastAPI, RAG, LangChain, Claude  
-**Repo:** [View Project](https://github.com/Josh1820/Enterprise-KnowledgeOPS-RAG-Platform)
+## Technical focus
 
-### 5. Secure Backend Boilerplate with Claude Guardrails
-Security-first FastAPI boilerplate with authentication scaffolds, RBAC, validation, structured errors, rate limiting, Docker, and Claude Code workflow organization.  
-**Stack:** FastAPI, Python, security middleware, pytest, Docker  
-**Repo:** [View Project](https://github.com/Josh1820/Secure-Backend-Claude-Guardrails)
+- **AI and NLP:** LLM integration, prompt engineering, RAG, embeddings, text classification and controlled outputs.
+- **Backend and data:** Python, FastAPI, Flask, Django REST Framework, SQL, PostgreSQL, Pandas and NumPy.
+- **Machine learning:** scikit-learn, TensorFlow, Keras and PyTorch.
+- **Applications and delivery:** React, TypeScript, REST APIs, Git, Docker, testing and technical handovers.
 
-### 6. RAG Knowledge Assistant for Company Documents
-FastAPI-based RAG system for uploading company documents, indexing them, retrieving relevant content, and generating grounded answers with citations.  
-**Stack:** Python, FastAPI, RAG, vector search, Docker  
-**Repo:** [View Project](https://github.com/Josh1820/RAG-Company-Docs-Assistant)
+## Earlier work
 
-### 7. AI Testing and QA Copilot
-Developer-focused QA platform for code analysis, test suggestion, pytest scaffold generation, and QA report creation.  
-**Stack:** FastAPI, Python, pytest, HTML/CSS/JS  
-**Repo:** [View Project](https://github.com/Josh1820/AI-Testing-QA-Copilot)
+- Customer segmentation with K-Means during my Exposys Data Labs internship.
+- Raspberry Pi voice assistant using speech recognition, NLP and IoT control during my Ai Robosoft internship.
+- Academic projects in news classification, image emotion detection and Django-based question paper generation.
+- Responsive WordPress and Elementor work for Your Digital Services and BJL Driveways.
 
-### 8. AI DevOps Release Assistant
-Python-based release engineering assistant for changelog generation, release summaries, rollback notes, and deployment checklists.  
-**Stack:** Python, Typer, FastAPI, Git-based workflows  
-**Repo:** [View Project](https://github.com/Josh1820/AI-DevOps-Release-Assistant)
+## Education
 
-## Portfolio Website
-[Portfolio Website](https://Josh1820.github.io)
+- **MSc Artificial Intelligence** — Cardiff University, 2023–2025.
+- **BE Computer Science and Engineering** — MVJ College of Engineering, 2019–2023.
 
-## Links
-- LinkedIn: (https://www.linkedin.com/in/joshua-jacob-72678b191/)
-- GitHub: https://github.com/Josh1820
+## Portfolio website
+
+The website source is in [`docs/`](docs/). See [local preview and editing instructions](DEVELOPMENT.md). A public website link will be added after hosting is configured and verified.
