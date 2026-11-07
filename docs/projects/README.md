@@ -1,5 +1,7 @@
 # Selected project summaries
 
+For my eight self-directed AI and engineering projects, see [Independent projects](independent-projects.md).
+
 ## World Police Summit Advisory Platform
 
 **Context:** Professional application development at Digital Safety CIC.

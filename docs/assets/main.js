@@ -33,7 +33,7 @@ systemTheme.addEventListener('change', (event) => {
 
 const menuButton = document.querySelector('.menu-toggle');
 const navigation = document.querySelector('#navigation');
-const mobileViewport = window.matchMedia('(max-width: 760px)');
+const mobileViewport = window.matchMedia('(max-width: 900px)');
 
 if (menuButton && navigation) {
   const setMenuOpen = (isOpen) => {

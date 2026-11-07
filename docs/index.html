@@ -34,6 +34,7 @@
           <a href="#work">Work</a>
           <a href="#expertise">Expertise</a>
           <a href="#experience">Experience</a>
+          <a href="#education">Education</a>
           <a class="nav-contact" href="#contact">Let’s connect <span aria-hidden="true">↗</span></a>
         </nav>
       </div>
@@ -64,6 +65,10 @@
 
       <section id="work" class="section container" aria-labelledby="work-title">
         <div class="section-heading"><div><p class="eyebrow">01 / Selected work</p><h2 id="work-title">The problem.<br><span class="serif">The work behind it.</span></h2></div><p>Professional and academic projects, with a focus on what I contributed and how each application works.</p></div>
+        <nav class="project-jumps" aria-label="Project categories">
+          <a href="#work">Professional &amp; academic work</a>
+          <a href="#independent-projects">Independent projects <span>8</span> <span aria-hidden="true">↘</span></a>
+        </nav>
 
         <article class="featured-project" aria-labelledby="wpsap-title">
           <div class="featured-content"><div class="project-meta"><span>Application engineering</span><span class="project-type">Professional work</span></div><h3 id="wpsap-title">World Police Summit<br>Advisory Platform</h3><p>Expert service requests and administrator review workflows, alongside public feedback and interest registration.</p><ul class="tag-list" aria-label="Technologies"><li>React</li><li>TypeScript</li><li>Django REST Framework</li><li>PostgreSQL</li></ul><details class="project-details"><summary>Explore the contribution <span aria-hidden="true">+</span></summary><div class="details-content"><h4>My contribution</h4><p>Implemented administrator review of expert service requests, public feedback and landing-page interest registration. Worked on role-based workflows and technical handover documentation.</p><h4>Implementation status</h4><p>Implemented and reviewed locally. This case study covers development work; production deployment and security approval are not claimed.</p></div></details></div>
@@ -76,15 +81,121 @@
           <article class="project-card project-card-wide" aria-labelledby="escape-title"><div class="escape-copy"><div class="project-meta"><span>Digital safety &amp; learning</span><span class="project-type">Professional work</span></div><h3 id="escape-title">Digital Safety<br>Escape Experience</h3><p>Making digital safety approachable through interactive puzzle journeys, replay variants and two learning levels for children and beginner learners.</p><ul class="tag-list" aria-label="Technologies"><li>React</li><li>JavaScript</li><li>Interactive learning</li></ul><details class="project-details"><summary>Explore the contribution <span aria-hidden="true">+</span></summary><div class="details-content"><h4>My contribution</h4><p>Developed and refined the React puzzle experience, including replay variants and learning-level selection. The original audience was ages 7–11; the experience was subsequently broadened for beginner learners of any age.</p><h4>Design focus</h4><p>Clear learning journeys and approachable puzzle interactions. No learning-impact metrics or participation figures are claimed.</p></div></details></div><div class="puzzle-visual" aria-label="Two learning levels with replay variants"><span class="small-label">Different ways to learn</span><div class="puzzle-tiles" aria-hidden="true"><span>?</span><span>↗</span><span>✓</span><span>↺</span></div><p>Choose a level.<br>Explore. Learn. Replay.</p></div></article>
         </div>
         <p class="work-note">Professional work is presented as high-level case studies. Private source code and internal project details are excluded.</p>
+
+        <section id="independent-projects" class="independent-projects" aria-labelledby="independent-title">
+          <div class="section-heading">
+            <div><p class="eyebrow">Independent projects</p><h2 id="independent-title">Skills put<br><span class="serif">into practice.</span></h2></div>
+            <p>Eight self-directed projects exploring AI, retrieval and backend engineering. Three featured prototypes, followed by five supporting tools and experiments.</p>
+          </div>
+          <div class="independent-grid">
+            <article id="personal-rag" class="project-card personal-feature" aria-labelledby="personal-rag-title">
+              <div class="project-meta"><span>Document Q&amp;A</span><span class="project-type">Personal prototype</span></div>
+              <div class="project-flow" aria-label="Document assistant workflow"><span>Upload</span><span aria-hidden="true">→</span><span>Retrieve</span><span aria-hidden="true">→</span><span>Answer</span></div>
+              <h3 id="personal-rag-title">RAG Knowledge Assistant</h3>
+              <p>A document assistant that connects ingestion and vector retrieval to provider-based answers with source citations.</p>
+              <ul class="tag-list" aria-label="Technologies"><li>FastAPI</li><li>Chroma</li><li>Sentence Transformers</li><li>OpenAI integration</li></ul>
+              <details class="project-details">
+                <summary>Implementation &amp; scope <span aria-hidden="true">+</span></summary>
+                <div class="details-content">
+                  <h4>What I built</h4><p>PDF, text and Markdown uploads, extraction, overlapping chunks, vector storage, question retrieval and a browser interface with citations.</p>
+                  <h4>Design choices</h4><p>Separate ingestion, retrieval and provider interfaces. Local Sentence Transformers embeddings and an implemented OpenAI answer provider sit alongside mock providers for repeatable local tests.</p>
+                  <h4>Current scope</h4><p>Local prototype. Live provider performance and retrieval quality have not been benchmarked; returned citations make evidence inspectable, rather than proving answer correctness.</p>
+                </div>
+              </details>
+            </article>
+            <article id="personal-knowledgeops" class="project-card personal-feature" aria-labelledby="personal-knowledgeops-title">
+              <div class="project-meta"><span>Knowledge workflows</span><span class="project-type">Personal prototype</span></div>
+              <div class="project-flow" aria-label="Knowledge platform workflow"><span>Organise</span><span aria-hidden="true">→</span><span>Search</span><span aria-hidden="true">→</span><span>Trace</span></div>
+              <h3 id="personal-knowledgeops-title">Enterprise KnowledgeOps</h3>
+              <p>A workspace-based knowledge platform bringing document ingestion, retrieval, chat records and feedback into one application.</p>
+              <ul class="tag-list" aria-label="Technologies"><li>FastAPI</li><li>SQLAlchemy</li><li>LangChain</li><li>Chroma</li></ul>
+              <details class="project-details">
+                <summary>Implementation &amp; scope <span aria-hidden="true">+</span></summary>
+                <div class="details-content">
+                  <h4>What I built</h4><p>Workspace access checks, knowledge-base APIs, document ingestion and reprocessing, hybrid retrieval, citations, feedback and audit-style records.</p>
+                  <h4>Design choices</h4><p>SQL metadata and vector indexing have separate responsibilities. Chat supports an optional OpenAI/LangChain integration and an extractive fallback.</p>
+                  <h4>Current scope</h4><p>Retrieval currently uses hash embeddings and synchronous ingestion. Evaluation tracks response and retrieval activity; it does not establish answer correctness or compliance certification.</p>
+                </div>
+              </details>
+            </article>
+            <article id="personal-credit" class="project-card personal-feature" aria-labelledby="personal-credit-title">
+              <div class="project-meta"><span>Applied ML</span><span class="project-type">Personal prototype</span></div>
+              <div class="project-flow" aria-label="Experimental model workflow"><span>Inputs</span><span aria-hidden="true">→</span><span>Models</span><span aria-hidden="true">→</span><span>Review</span></div>
+              <h3 id="personal-credit-title">Credit Intelligence</h3>
+              <p>A prototype connecting document evidence, small forecasting and classification models, and analyst review workflows.</p>
+              <ul class="tag-list" aria-label="Technologies"><li>FastAPI</li><li>TensorFlow/Keras</li><li>PyTorch</li><li>SQLAlchemy</li></ul>
+              <details class="project-details">
+                <summary>Implementation &amp; scope <span aria-hidden="true">+</span></summary>
+                <div class="details-content">
+                  <h4>What I built</h4><p>Issuer and workspace workflows, retrieval and citations, rating-support endpoints, surveillance, feedback, a small Keras forecaster and a PyTorch text classifier.</p>
+                  <h4>Design choices</h4><p>Typed API routes connect modular application services to model workflows. Forecasting uses sliding windows; classifier training uses synthetic keyword-derived examples.</p>
+                  <h4>Current scope</h4><p>Experimental local models with no established real-world predictive performance. Retrieval uses hash embeddings, chat assembles source snippets, and anomaly checks use keyword rules or tensor statistics.</p>
+                </div>
+              </details>
+            </article>
+          </div>
+
+          <div class="supporting-heading"><h3>Supporting tools &amp; experiments</h3><p>Focused engineering work and further applications of the same foundations.</p></div>
+          <div class="supporting-projects">
+            <details id="personal-backend" class="supporting-project">
+              <summary><span><span class="supporting-category">Backend engineering</span><strong>Secure Backend Boilerplate</strong></span><span class="summary-indicator" aria-hidden="true">+</span></summary>
+              <div class="supporting-body"><p>A reusable FastAPI starter with JWT authentication, password hashing, role checks, validation, error handling, logging, rate limiting and security headers.</p><p><strong>Current scope:</strong> Development starter with an in-memory demonstration user store. The controls provide a starting point for further hardening.</p><ul class="tag-list" aria-label="Technologies"><li>Python</li><li>FastAPI</li><li>JWT</li><li>pytest</li><li>Docker</li></ul></div>
+            </details>
+            <details id="personal-qa" class="supporting-project">
+              <summary><span><span class="supporting-category">Static analysis &amp; testing</span><strong>Testing and QA Copilot</strong></span><span class="summary-indicator" aria-hidden="true">+</span></summary>
+              <div class="supporting-body"><p>A browser tool that analyses code structure and basic risk signals, then creates test ideas, edge-case prompts, editable pytest scaffolds and Markdown reports.</p><p><strong>Current scope:</strong> Python AST analysis and deterministic heuristics. Generated scaffolds need meaningful assertions and human review.</p><ul class="tag-list" aria-label="Technologies"><li>Python AST</li><li>FastAPI</li><li>HTML/CSS/JavaScript</li><li>pytest</li></ul></div>
+            </details>
+            <details id="personal-release" class="supporting-project">
+              <summary><span><span class="supporting-category">Release automation</span><strong>DevOps Release Assistant</strong></span><span class="summary-indicator" aria-hidden="true">+</span></summary>
+              <div class="supporting-body"><p>A Typer CLI and optional API that parse Git history, categorise commits and prepare changelogs, release summaries, checklists and rollback-plan templates.</p><p><strong>Current scope:</strong> Rule-based generation and templates. The tool prepares release material; it does not deploy applications or verify environment readiness.</p><ul class="tag-list" aria-label="Technologies"><li>Python</li><li>Typer</li><li>Git</li><li>FastAPI</li></ul></div>
+            </details>
+            <details id="personal-pricing" class="supporting-project">
+              <summary><span><span class="supporting-category">Pricing &amp; forecasting experiments</span><strong>Pricing Intelligence</strong></span><span class="summary-indicator" aria-hidden="true">+</span></summary>
+              <div class="supporting-body"><p>A domain prototype with pricing analytics, benchmark comparisons, valuation summaries, document retrieval and forecasting workflows.</p><p><strong>Current scope:</strong> A deterministic forecasting baseline with an optional TensorFlow/Keras path that can fall back to the baseline. Classification is keyword-based and answer synthesis assembles retrieved snippets.</p><ul class="tag-list" aria-label="Technologies"><li>FastAPI</li><li>SQLAlchemy</li><li>Optional TensorFlow/Keras</li><li>Rule-based analytics</li></ul></div>
+            </details>
+            <details id="personal-finance" class="supporting-project">
+              <summary><span><span class="supporting-category">Backend workflow scaffold</span><strong>Financial Research and Risk</strong></span><span class="summary-indicator" aria-hidden="true">+</span></summary>
+              <div class="supporting-body"><p>A financial research prototype connecting workspaces, knowledge bases, ingestion, retrieval, portfolio/risk workflows, feedback and evaluation routes.</p><p><strong>Current scope:</strong> Deterministic trend forecasting and token-profile classification, with saved configuration artifacts. These are workflow scaffolds rather than TensorFlow or PyTorch training pipelines.</p><ul class="tag-list" aria-label="Technologies"><li>Python</li><li>FastAPI</li><li>SQLAlchemy</li><li>SQLite</li></ul></div>
+            </details>
+          </div>
+          <p class="work-note">Built as personal projects to apply new skills. Existing test suites were checked locally; live LLM performance and independent model-quality benchmarks are outside that functional check.</p>
+        </section>
       </section>
 
       <section id="expertise" class="expertise-section" aria-labelledby="expertise-title"><div class="section container"><div class="section-heading"><div><p class="eyebrow">02 / Expertise</p><h2 id="expertise-title">From the model<br><span class="serif">to the application.</span></h2></div><p>I combine AI development with backend engineering and usable interfaces, keeping the wider workflow in view.</p></div><div class="expertise-grid"><div class="expertise-group"><span class="expertise-symbol" aria-hidden="true">✳</span><h3>AI &amp; language</h3><p>LLM integration, prompt engineering, RAG, embeddings, NLP and text classification.</p><ul class="plain-list"><li>OpenAI API · LangChain</li><li>scikit-learn · TensorFlow</li><li>Keras · PyTorch</li></ul></div><div class="expertise-group"><span class="expertise-symbol" aria-hidden="true">⌘</span><h3>Backend &amp; data</h3><p>APIs, application logic and data workflows that connect AI capabilities to useful tools.</p><ul class="plain-list"><li>Python · FastAPI · Flask</li><li>Django REST Framework</li><li>SQL · PostgreSQL · Pandas · NumPy</li></ul></div><div class="expertise-group"><span class="expertise-symbol" aria-hidden="true">↗</span><h3>Applications &amp; delivery</h3><p>Responsive interfaces, role-based workflows, testing and clear technical handovers.</p><ul class="plain-list"><li>React · TypeScript · HTML/CSS</li><li>Git · Docker · REST APIs</li><li>WordPress · Elementor</li></ul></div></div></div></section>
 
-      <section id="experience" class="section container experience-section" aria-labelledby="experience-title"><div class="experience-intro"><p class="eyebrow">03 / Experience</p><h2 id="experience-title">Practical work.<br><span class="serif">A foundation in AI.</span></h2><p>My experience spans AI applications, full-stack development, NLP and data analysis.</p><div class="education"><h3>Education</h3><p><strong>MSc Artificial Intelligence</strong><br>Cardiff University · 2023–2025</p><p><strong>BE Computer Science and Engineering</strong><br>MVJ College of Engineering · 2019–2023</p></div></div><div class="timeline"><article class="timeline-item"><p class="timeline-date">April 2026–Present</p><h3>AI-SME</h3><p class="employer">Digital Safety CIC <span>Chester-le-Street, UK</span></p><p>Developing application features for the World Police Summit Advisory Platform, refining digital safety learning experiences and contributing to responsive websites and technical handovers.</p></article><article class="timeline-item"><p class="timeline-date">September 2025–March 2026</p><h3>Senior AI Engineer</h3><p class="employer">TID Global</p><p>Developed Python and Flask AI applications for operational workflows, working with developers to integrate AI functionality and manage requirements, testing and delivery priorities.</p></article><article class="timeline-item"><p class="timeline-date">February–April 2023</p><h3>AI and ML Intern</h3><p class="employer">Ai Robosoft Products and Services</p><p>Built a Raspberry Pi voice assistant using speech recognition and NLP, with IoT device control for home automation.</p></article><article class="timeline-item"><p class="timeline-date">August–September 2022</p><h3>Data Science Intern</h3><p class="employer">Exposys Data Labs</p><p>Developed a K-Means customer segmentation model, including data preprocessing and analytical reporting.</p></article></div></section>
+      <section id="experience" class="section container experience-section" aria-labelledby="experience-title"><div class="experience-intro"><p class="eyebrow">03 / Experience</p><h2 id="experience-title">Practical work.<br><span class="serif">Engineering experience.</span></h2><p>My experience spans AI applications, full-stack development, NLP and data analysis.</p></div><div class="timeline"><article class="timeline-item"><p class="timeline-date">April 2026–Present</p><h3>AI-SME</h3><p class="employer">Digital Safety CIC <span>Chester-le-Street, UK</span></p><p>Developing application features for the World Police Summit Advisory Platform, refining digital safety learning experiences and contributing to responsive websites and technical handovers.</p></article><article class="timeline-item"><p class="timeline-date">September 2025–March 2026</p><h3>Senior AI Engineer</h3><p class="employer">TID Global</p><p>Developed Python and Flask AI applications for operational workflows, working with developers to integrate AI functionality and manage requirements, testing and delivery priorities.</p></article><article class="timeline-item"><p class="timeline-date">February–April 2023</p><h3>AI and ML Intern</h3><p class="employer">Ai Robosoft Products and Services</p><p>Built a Raspberry Pi voice assistant using speech recognition and NLP, with IoT device control for home automation.</p></article><article class="timeline-item"><p class="timeline-date">August–September 2022</p><h3>Data Science Intern</h3><p class="employer">Exposys Data Labs</p><p>Developed a K-Means customer segmentation model, including data preprocessing and analytical reporting.</p></article></div></section>
+
+      <section id="education" class="education-section" aria-labelledby="education-title">
+        <div class="section container">
+          <div class="section-heading">
+            <div><p class="eyebrow">04 / Academic background</p><h2 id="education-title">Education.<br><span class="serif">From study to practice.</span></h2></div>
+            <p>Academic foundations in artificial intelligence and computer science, applied through research and software projects.</p>
+          </div>
+          <div class="education-grid">
+            <article class="education-card education-card-primary" aria-labelledby="msc-title">
+              <div class="degree-topline"><span class="degree-level">Postgraduate</span><span class="degree-dates">2023–2025</span></div>
+              <svg class="degree-icon" viewBox="0 0 32 32" aria-hidden="true"><path d="m3 12 13-7 13 7-13 7-13-7ZM8 15v9c5 4 11 4 16 0v-9M29 12v11"/></svg>
+              <h3 id="msc-title">MSc Artificial Intelligence</h3>
+              <p class="university">Cardiff University</p>
+              <p class="degree-description">Applied NLP research through my thesis on detecting gendered language and suggesting neutral alternatives.</p>
+              <a class="degree-link" href="#nlp-title">Explore my MSc thesis <span aria-hidden="true">↗</span></a>
+            </article>
+            <article class="education-card" aria-labelledby="bachelors-title">
+              <div class="degree-topline"><span class="degree-level">Undergraduate</span><span class="degree-dates">2019–2023</span></div>
+              <svg class="degree-icon" viewBox="0 0 32 32" aria-hidden="true"><path d="m11 9-7 7 7 7M21 9l7 7-7 7M18 6l-4 20"/></svg>
+              <h3 id="bachelors-title">BE Computer Science<br>and Engineering</h3>
+              <p class="university">MVJ College of Engineering</p>
+              <p class="degree-description">Academic projects in Django application development, news classification and image emotion detection.</p>
+              <a class="degree-link" href="#more-title">Explore related projects <span aria-hidden="true">↗</span></a>
+            </article>
+          </div>
+        </div>
+      </section>
 
       <section class="more-work container" aria-labelledby="more-title"><div><p class="eyebrow">Also in my toolkit</p><h2 id="more-title">A wider range of problems.</h2></div><div class="more-work-grid"><div><h3>Machine learning projects</h3><p>News article classification and image emotion detection, with dataset analysis and error evaluation.</p></div><div><h3>Web applications</h3><p>Django question paper generation and responsive WordPress/Elementor work for Your Digital Services and BJL Driveways.</p></div><div><h3>Research &amp; proposal support</h3><p>AI-assisted research and application refinement for Connections Through Gaming, including evidence and online safety considerations.</p></div></div></section>
 
-      <section id="contact" class="contact-section" aria-labelledby="contact-title"><div class="container contact-inner"><div><p class="eyebrow">04 / Get in touch</p><h2 id="contact-title">Have a problem<br><span class="serif">worth working on?</span></h2><p>Let’s talk about AI engineering, generative AI, machine learning or the software that brings them together.</p></div><div class="contact-actions"><a class="button button-light" href="https://www.linkedin.com/in/joshua-jacob-72678b191/">Connect on LinkedIn <span aria-hidden="true">↗</span></a><a class="contact-github" href="https://github.com/Josh1820">View my GitHub profile <span aria-hidden="true">↗</span></a></div></div></section>
+      <section id="contact" class="contact-section" aria-labelledby="contact-title"><div class="container contact-inner"><div><p class="eyebrow">05 / Get in touch</p><h2 id="contact-title">Have a problem<br><span class="serif">worth working on?</span></h2><p>Let’s talk about AI engineering, generative AI, machine learning or the software that brings them together.</p></div><div class="contact-actions"><a class="button button-light" href="https://www.linkedin.com/in/joshua-jacob-72678b191/">Connect on LinkedIn <span aria-hidden="true">↗</span></a><a class="contact-github" href="https://github.com/Josh1820">View my GitHub profile <span aria-hidden="true">↗</span></a></div></div></section>
     </main>
     <footer class="site-footer"><div class="container footer-inner"><span>© 2026 Joshua Jacob</span><span>AI engineering, with people in mind.</span><a href="#top">Back to top <span aria-hidden="true">↑</span></a></div></footer>
   </body>

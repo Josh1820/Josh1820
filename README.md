@@ -19,6 +19,28 @@ Currently **AI-SME at Digital Safety CIC** (April 2026–present). Previously **
 
 These are summaries of professional and academic work. Source availability varies; no private project code is included here. [Read the project summaries](docs/projects/README.md).
 
+## Independent projects
+
+Self-directed projects applying new skills in AI, retrieval, machine learning and backend engineering. These are local prototypes and development tools.
+
+### Featured
+
+| Project | What I implemented | Technologies and scope |
+| --- | --- | --- |
+| [RAG Knowledge Assistant](docs/projects/independent-projects.md#rag-knowledge-assistant) | Document upload, extraction, chunking, vector retrieval, provider selection and answers with source citations. | FastAPI, Chroma, Sentence Transformers and an implemented OpenAI provider; mock mode for local testing. |
+| [Enterprise KnowledgeOps](docs/projects/independent-projects.md#enterprise-knowledgeops) | Workspaces, access checks, knowledge bases, ingestion, hybrid retrieval, chat, feedback and evaluation workflows. | FastAPI, SQLAlchemy, LangChain and Chroma; hash embeddings, optional OpenAI answers and synchronous ingestion. |
+| [Credit Intelligence](docs/projects/independent-projects.md#credit-intelligence) | Document retrieval and analyst workflows alongside small Keras forecasting and PyTorch classification models. | Experimental local models; classifier training uses synthetic keyword-derived examples. Chat assembles retrieved evidence. |
+
+### Supporting projects
+
+- [Secure Backend Boilerplate](docs/projects/independent-projects.md#secure-backend-boilerplate): JWT authentication, role checks, validation and middleware, using a demonstration user store.
+- [Testing and QA Copilot](docs/projects/independent-projects.md#testing-and-qa-copilot): Python AST analysis, rule-based test suggestions and editable pytest scaffolds.
+- [DevOps Release Assistant](docs/projects/independent-projects.md#devops-release-assistant): Git history parsing and rule-based changelog, release summary and checklist generation.
+- [Pricing Intelligence](docs/projects/independent-projects.md#pricing-intelligence): Pricing and valuation workflows, baseline forecasting, an optional TensorFlow path and keyword-based text classification.
+- [Financial Research and Risk](docs/projects/independent-projects.md#financial-research-and-risk): Financial research APIs, document retrieval and deterministic forecasting/classification workflow scaffolds.
+
+[Read implementation details and current limitations](docs/projects/independent-projects.md).
+
 ## Technical focus
 
 - **AI and NLP:** LLM integration, prompt engineering, RAG, embeddings, text classification and controlled outputs.
