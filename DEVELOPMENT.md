@@ -22,7 +22,7 @@ Open <http://127.0.0.1:4178>. Stop the server with Ctrl+C.
 - `docs/index.html`: Website content, project summaries and navigation.
 - `docs/assets/styles.css`: Colours, typography and responsive layout.
 - `docs/assets/main.js`: Mobile navigation enhancement and current section indicator.
-- `docs/assets/theme.js`: Applies the saved light/dark preference before the page paints. The header toggle remembers a choice locally; the device preference is used until a choice is made.
+- `docs/assets/theme.js`: Applies the saved light/dark preference before the page paints. Dark mode is the default, regardless of the device preference; the header toggle remembers an explicit light or dark choice locally.
 - `docs/projects/README.md`: Longer project notes.
 
 Keep the profile, website and project notes consistent. Confirm project ownership, dates and permission to share before adding detail. Use public-safe screenshots only. The site deliberately links to LinkedIn instead of publishing a phone number, email address or the contact details in the CV.

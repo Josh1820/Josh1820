@@ -1,5 +1,4 @@
 const themeButton = document.querySelector('.theme-toggle');
-const systemTheme = window.matchMedia('(prefers-color-scheme: dark)');
 let selectedTheme = null;
 
 try {
@@ -16,7 +15,7 @@ const applyTheme = (theme) => {
   }
 };
 
-applyTheme(selectedTheme || (systemTheme.matches ? 'dark' : 'light'));
+applyTheme(selectedTheme || 'dark');
 
 if (themeButton) {
   themeButton.hidden = false;
@@ -26,10 +25,6 @@ if (themeButton) {
     try { localStorage.setItem('portfolio-theme', selectedTheme); } catch {}
   });
 }
-
-systemTheme.addEventListener('change', (event) => {
-  if (!selectedTheme) applyTheme(event.matches ? 'dark' : 'light');
-});
 
 const menuButton = document.querySelector('.menu-toggle');
 const navigation = document.querySelector('#navigation');
